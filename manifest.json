@@ -1,0 +1,29 @@
+{
+   "action": {
+      "default_icon": "icon/icon.png",
+      "default_popup": "index.html"
+   },
+   "content_scripts": [ {
+      "css": [ "content.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "https://*.wildberries.ru/*", "https://wildberries.ru/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "mkeeper Управление рекламой",
+   "differential_fingerprint": "1.8e968520b56c61e619690997adc924d37407d4a06006a6dfca44195c0a140efa",
+   "host_permissions": [ "https://api.mkeeper.ru/*", "https://prod.mkeeper.ru/*", "https://www.wildberries.ru/*", "https://wildberries.ru/*", "https://www.seller.wildberries.ru/*", "https://seller.wildberries.ru/*", "https://www.cmp.wildberries.ru/*", "https://cmp.wildberries.ru/*" ],
+   "icons": {
+      "128": "icon/icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjGpOk30eidEMI/+lsyco8a8NxPL4rTenwp4QEW2BKvjZ2Kyp/ioSZWB4amjrWK13KQy5NwppxTCqiiFEMhY9cm0zPVf+d1HVH5bt9D6xSvK1kP1PNEX979rZaQvrFul0z9BNzg3IUtTqh6UmFqB1n+cyGJBYfTB9buxZFXH26wN+bPbxWA3nmM01Pld63fKEj4U9Vjbj/irs3MKrkd9fAMqIwc5HHaLoxYhwxkSrH5jAc6dKmGlfxWa/CKmnOu1g4VnZulOMHXFjOzVHKdg+Ne+NJOvNhrmKxhD69BY6z+vdE+XoU7MfAFiEBnz+7CgdrAcDHb3Jz3c5aOwuicnRGQIDAQAB",
+   "manifest_version": 3,
+   "name": "mkeeper",
+   "permissions": [ "storage", "cookies" ],
+   "short_name": "mkeeper",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.8.50",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*.wildberries.ru/*" ],
+      "resources": [ "icon/icon.png" ]
+   } ]
+}
